@@ -5,28 +5,43 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Platzi Video</title>
+        <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="./mobile.css">
         <link rel="stylesheet" href="./desktop.css" media="screen and (min-width:768px)">
     </head>
 <body>
-    <details open>
-        <summary>
-            Lista
-        </summary>
-        <ul>
-            <li>
-                Miska
-            </li>
-            <li>
-                Muska
-            </li>
-            <li>
-                Mickey
-            </li>
-            <li>
-            dfddddd        Mouse
-            </li>
-        </ul>
-    </details>
+    <header class="header">
+        <nav class="header__nav">
+            <figure>
+                <img src="./asssets/logo-platzi-video-BW2.png" alt="Logo Platzi Video">
+            </figure>
+            <section>
+                <figure>
+                    <img src="./asssets/user-icon.png" alt="Profile Icon">
+                </figure>
+                <details class="header__summary">
+                <summary>
+                    Perfil
+                </summary>
+                <ul class="header__ul">
+                    <li>
+                        Cuenta
+                    </li>
+                    <li>
+                        Cerrar sesión
+                    </li>
+                </ul>
+                </details>
+            </section>
+        </nav>
+    </header>
+    <main>
+       <section class="main__section">
+        <p>
+            ¿Qué estás buscando?
+        </p>
+        <input type="text" placeholder="Buscar...">
+        </section> 
+    </main>
 </body>
 </html>
