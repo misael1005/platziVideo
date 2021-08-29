@@ -1,76 +1,92 @@
 <!DOCTYPE html>
-<html lang="es">
-    <head>
+<html lang="en">
+<head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Platzi Video</title>
         <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="./mobile.css">
-        <link rel="stylesheet" href="./desktop.css" media="screen and (min-width:768px)">
-    </head>
+        <link rel="stylesheet" href="./styles.css">
+</head>
 <body>
-    <header class="header">
-        <nav class="header__nav">
+    <header>
+        <nav class="nav">
             <figure>
                 <img src="./asssets/logo-platzi-video-BW2.png" alt="Logo Platzi Video">
             </figure>
-            <section>
+            <section class="nav-menu">
+                <section class="nav-profile">
                 <figure>
-                    <img src="./asssets/user-icon.png" alt="Profile Icon">
+                    <img src="./asssets/user-icon.png" alt="User icon">
                 </figure>
-                <details class="header__summary">
-                <summary>
+                <p>
                     Perfil
-                </summary>
-                <ul class="header__ul">
-                    <li>
-                        Cuenta
-                    </li>
-                    <li>
-                        Cerrar sesión
-                    </li>
-                </ul>
-                </details>
+                </p>
+            </section>
+            <ul>
+                <li>
+                    Cuenta
+                </li>
+                <li>
+                    Cerrar sesión
+                </li>
+            </ul>
             </section>
         </nav>
     </header>
     <main>
-       <section class="main__section">
-        <p>
-            ¿Qué estás buscando?
-        </p>
-        <input type="text" placeholder="Buscar...">
-        </section> 
-        <section class="carousel">
-            <article class="carousel__container">
+        <section class="main-search">
+            <p>
+                ¿Qué estás buscando?
+            </p>
+            <input type="text" placeholder="Buscar...">
+        </section>
+        <article class="carousel">
+            <section class="carousel__container">
                 <section class="carousel-item">
                     <figure>
-                        <img class="carousel-item__img" src="https://images.unsplash.com/photo-1529472119196-cb724127a98e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=621&q=80" alt="Doggos">
+                        <img class="carousel-item__img" src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1350&q=80" alt="Perritos corriendo">
+                    </figure>
+                    <section class="carousel-item__details">
+                        <section class="carousel-item__details-controls">
+                            <figure>
+                            <img src="./asssets/play-icon.png" alt="Play video">
                         </figure>
-                        <section class="carousel-item__details">
-                            <section>
-                               <span>
-                                    <img src="./asssets/play-icon.png" alt="">
-                                </span>
-                                <span>
-                                    <img src="./asssets/plus-icon.png" alt="">
-                                </span> 
-                            </section>
-                            <p class="carousel-item__details-title">
-                                Perritos cool
+                        <figure>
+                            <img src="./asssets/plus-icon.png" alt="Add video to playlist">
+                        </figure>
+                        </section>
+                        <p class="carousel-item__details-title">
+                            Perritos corriendo
                         </p>
                         <p class="carousel-item__details-subtitle">
-                            Doggos para alegrar tu dia
-                    </p>
-                        </section>
-                        
+                            Son buenos pa'l corazón
+                        </p>
+                    </section>
                 </section>
                 <section class="carousel-item">
-
+                    <figure>
+                        <img class="carousel-item__img" src="https://images.unsplash.com/photo-1536809188428-e8ecf663d0be?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1350&q=80" alt="Perrito recostado">
+                    </figure>
+                    <section class="carousel-item__details">
+                        <section class="carousel-item__details-controls">
+                            <figure>
+                            <img src="./asssets/play-icon.png" alt="Play video">
+                        </figure>
+                        <figure>
+                            <img src="./asssets/plus-icon.png" alt="Add video to playlist">
+                        </figure>
+                        </section>
+                        <p class="carousel-item__details-title">
+                            Perrito tomando el sol
+                        </p>
+                        <p class="carousel-item__details-subtitle">
+                            Le gusta jugar
+                        </p>
+                    </section>
                 </section>
-            </article>
-        </section>
+            </section>
+        </article>
     </main>
 </body>
 </html>
