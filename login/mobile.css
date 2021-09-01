@@ -1,26 +1,30 @@
 .nav {
-margin-top: 2rem;
+  margin-top: 2rem;
 }
 
 .nav img {
-    max-width: 17rem;
-} 
+  max-width: 17rem;
+}
 
 .login__container {
-    background-color: transparent;
-    border: none;
-    padding-left: 2rem;
-    padding-top: 0;
-    padding-bottom: 0;
-    margin-bottom: 0;
-    padding-right: 4rem;
-    width: 100vw;
+  background-color: transparent;
+  border: none;
+  padding-left: 2rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  padding-right: 4rem;
+  width: 100vw;
 }
 
 .login {
-    min-height: 73vh;
+  min-height: 73vh;
 }
 
 .footer {
-    flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
+/*# sourceMappingURL=mobile.css.map */
