@@ -108,6 +108,15 @@ body {
     font-size: 2rem;
 }
 
+.carousel__title {
+    color: var(--text-color);
+    font-size: 2.2rem;
+    margin-top: 4rem;
+    margin-left: 3rem;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
 .carousel {
     padding: 3rem;
     overflow: scroll;
@@ -117,7 +126,7 @@ body {
 
 .carousel__container {
     margin: 7rem 0;
-    padding-bottom: 1rem; 
+    /* padding-bottom: 1rem;  */
     white-space: nowrap;
 }
 
