@@ -10,26 +10,27 @@ html {
   font-size: 62.5%;
 }
 
-:root {
-  --background-color: #8F57FD;
-  --text-color: white;
+.flex, .nav, .nav-menu, .nav-profile, .main-search, .main-search input, .carousel-item__details, .carousel-item__details-controls {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 body {
-  background-color: #AB88FF;
-  font-family: 'Muli', sans-serif;
+  background-color: #8f57fd;
+  font-family: "Muli", sans-serif;
   margin: 0px;
 }
 
 .nav {
-  color: var(--text-color);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  color: white;
+  margin-top: 2rem;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-top: 1rem;
   padding-left: 1rem;
   padding-right: 1rem;
   max-height: 5rem;
@@ -41,9 +42,6 @@ body {
 }
 
 .nav-menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -58,12 +56,6 @@ body {
 }
 
 .nav-profile {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -75,7 +67,8 @@ body {
   margin-right: 1rem;
 }
 
-.nav-profile:hover ul, .nav-menu:hover ul {
+.nav-profile:hover ul,
+.nav-menu:hover ul {
   cursor: pointer;
   display: block;
 }
@@ -89,13 +82,7 @@ body {
 }
 
 .main-search {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  color: var(--text-color);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  color: white;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -107,17 +94,11 @@ body {
 }
 
 .main-search input {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   background-color: rgba(255, 255, 255, 0.1);
-  border-color: var(--text-color);
+  border-color: white;
   border-radius: 20rem;
   border-style: solid;
-  color: var(--text-color);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  color: white;
   font-size: 2rem;
   height: 4vw;
   margin-top: 2.5rem;
@@ -146,27 +127,27 @@ body {
 }
 
 ::-webkit-input-placeholder {
-  color: var(--text-color);
+  color: white;
   font-size: 2rem;
 }
 
 :-ms-input-placeholder {
-  color: var(--text-color);
+  color: white;
   font-size: 2rem;
 }
 
 ::-ms-input-placeholder {
-  color: var(--text-color);
+  color: white;
   font-size: 2rem;
 }
 
 ::placeholder {
-  color: var(--text-color);
+  color: white;
   font-size: 2rem;
 }
 
 .carousel__title {
-  color: var(--text-color);
+  color: white;
   font-size: 2.2rem;
   margin-top: 4rem;
   margin-left: 3rem;
@@ -226,11 +207,20 @@ body {
 }
 
 .carousel-item__details {
+  -ms-flex-line-pack: end;
+      align-content: flex-end;
   background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.9)), to(rgba(0, 0, 0, 0)));
   background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 100%);
   bottom: 0;
-  color: var(--text-color);
+  color: white;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   font-size: 1rem;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   left: 0;
   opacity: 0;
   padding: 1rem;
@@ -239,18 +229,6 @@ body {
   top: 0;
   -webkit-transition: 450ms opacity;
   transition: 450ms opacity;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -ms-flex-line-pack: end;
-      align-content: flex-end;
 }
 
 .carousel-item__details img {
@@ -273,11 +251,5 @@ body {
 
 .carousel-item__details-subtitle {
   padding-bottom: 0.5rem;
-}
-
-.carousel-item__details-controls {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 /*# sourceMappingURL=styles.css.map */
